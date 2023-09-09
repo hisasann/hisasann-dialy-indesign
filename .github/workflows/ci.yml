@@ -4,13 +4,13 @@ on: [push, pull_request]
 permissions:
   contents: read
 jobs:
-  test:
+  textlint:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
-        node: [ 16, 18 ]
+        node: [ 18 ]
 
-    name: Test(Node ${{ matrix.node }} on ${{ matrix.os }})
+    name: Textlint(Node ${{ matrix.node }} on ${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -20,6 +20,6 @@ jobs:
           cache: 'npm'
       - name: Install
         run: npm ci
-      - name: Text-lint
+      - name: Textlint
         run: |
           npm run textlint
