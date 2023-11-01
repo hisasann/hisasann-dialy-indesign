@@ -26,7 +26,13 @@ https://fonts.google.com/specimen/Kaisei+HarunoUmi
 
 ### 本文
 
+![honbunの書き出し.png](assets%2Fhonbun%E3%81%AE%E6%9B%B8%E3%81%8D%E5%87%BA%E3%81%97.png)
+
 PDF 書き出しプリセット： `[高品質印刷](変更)`
+
+書き出し形式は `見開き` を選択する。
+
+これにより、左右のページが1ページになる。
 
 ### 表紙
 
